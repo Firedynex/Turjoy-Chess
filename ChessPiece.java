@@ -1,10 +1,13 @@
+import PermanentCharacteristics.Color;
+import PermanentCharacteristics.PieceType;
+
 public abstract class ChessPiece {
 
     /**
      * {@code ChessPiece} 
      */
-    private String name;
-    private String color;
+    private PieceType name;
+    private Color color;
     private boolean canMove;
     private int xPosition;
     private int yPosition;
@@ -17,7 +20,7 @@ public abstract class ChessPiece {
      * @param xPosition
      * @param yPosition
      */
-    public ChessPiece(String name, String color, boolean canMove, int xPosition, int yPosition) {
+    public ChessPiece(PieceType name, Color color, boolean canMove, int xPosition, int yPosition) {
         this.name = name;
         this.color = color;
         this.canMove = canMove;
@@ -29,7 +32,7 @@ public abstract class ChessPiece {
      * Returns name variable.
      * @return String
      */
-    public String getName() {
+    public PieceType getName() {
         return this.name;
     }
 
@@ -37,7 +40,7 @@ public abstract class ChessPiece {
      * Returns the color of the piece.
      * @return String
      */
-    public String getColor() {
+    public Color getColor() {
         return this.color;
     }
 
