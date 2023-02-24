@@ -108,4 +108,9 @@ public abstract class ChessPiece {
     public void setYPosition(int yPosition) {
         this.yPosition = yPosition;
     }
+    /*
+     * Checks if the move is valid or not.
+     * @return boolean
+     */
+    public abstract boolean validMove(int xPosition, int yPosition);
 }
