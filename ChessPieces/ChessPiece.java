@@ -1,11 +1,11 @@
 package ChessPieces;
-import PermanentCharacteristics.Color;
-import PermanentCharacteristics.PieceType;
+import PermanentCharacteristics.*;
 
 public abstract class ChessPiece {
 
     /**
      * {@code ChessPiece} 
+     * Abstract class meant to represent all chess pieces.
      */
     private PieceType name;
     private Color color;
@@ -81,7 +81,7 @@ public abstract class ChessPiece {
      * Sets the color of the piece.
      * @param color
      */
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
@@ -108,9 +108,17 @@ public abstract class ChessPiece {
     public void setYPosition(int yPosition) {
         this.yPosition = yPosition;
     }
-    /*
+    /**
      * Checks if the move is valid or not.
      * @return boolean
      */
     public abstract boolean validMove(int xPosition, int yPosition);
+
+    /**
+     * Determines if the given coordinates constitute a valid move.
+     * @param xPosition
+     * @param yPosition
+     * @return boolean
+     */
+    protected abstract boolean validDirection(int xPosition, int yPosition);
 }
