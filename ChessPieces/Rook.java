@@ -1,5 +1,7 @@
 package ChessPieces;
 
+import javax.management.RuntimeErrorException;
+
 import PermanentCharacteristics.*;
 
 public class Rook extends ChessPiece {
@@ -23,7 +25,7 @@ public class Rook extends ChessPiece {
      * @return boolean
      */
     public boolean validMove(int xPosition, int yPosition) {
-        
+        throw new RuntimeErrorException(null);
     }
 
     /**
@@ -33,6 +35,6 @@ public class Rook extends ChessPiece {
      * @return boolean
      */
     protected boolean validDirection(int xPosition, int yPosition) {
-        
+        throw new RuntimeErrorException(null);
     }
 }

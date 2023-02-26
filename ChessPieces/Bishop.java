@@ -12,4 +12,12 @@ public class Bishop extends ChessPiece{
     public Bishop(Color color, int xPosition, int yPosition) {
         super(PieceType.BISHOP, color, false, xPosition, yPosition);
     }
+
+    public boolean validDirection(int xPosition, int yPosition) {
+        throw new RuntimeException();
+    }
+
+    public boolean validMove(int xPosition, int yPosition) {
+        throw new RuntimeException();
+    }
 }

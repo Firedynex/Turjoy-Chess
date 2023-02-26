@@ -12,4 +12,12 @@ public class Queen extends ChessPiece {
     public Queen(Color color, int xPosition, int yPosition) {
         super(PieceType.QUEEN, color, false, xPosition, yPosition);
     }
+
+    public boolean validDirection(int xPosition, int yPosition) {
+        throw new RuntimeException();
+    }
+
+    public boolean validMove(int xPosition, int yPosition) {
+        throw new RuntimeException();
+    }
 }

@@ -1,5 +1,7 @@
 package ChessPieces;
 
+import javax.management.RuntimeErrorException;
+
 import PermanentCharacteristics.*;
 
 public class Pawn extends ChessPiece{
@@ -16,6 +18,14 @@ public class Pawn extends ChessPiece{
     public Pawn(Color color, int xPosition, int yPosition, boolean firstMove) {
         super(PieceType.PAWN, color, true, xPosition, yPosition);
         this.firstMove = firstMove;
+    }
+
+    public boolean validDirection(int xPosition, int yPosition) {
+        throw new RuntimeException();
+    }
+
+    public boolean validMove(int xPosition, int yPosition) {
+        throw new RuntimeErrorException(null);
     }
 
 }

@@ -2,7 +2,7 @@ package ChessPieces;
 
 import PermanentCharacteristics.*;
 
-public class Knight extends ChessPiece.java {
+public class Knight extends ChessPiece {
     /**
      * Initializes all instance variables.
      * @param color
@@ -11,5 +11,13 @@ public class Knight extends ChessPiece.java {
      */
     public Knight(Color color, int xPosition, int yPosition) {
         super(PieceType.KNIGHT, color, true, xPosition, yPosition);
+    }
+
+    public boolean validDirection(int xPosition, int yPosition) {
+        throw new RuntimeException();
+    }
+
+    public boolean validMove(int xPosition, int yPosition) {
+        throw new RuntimeException();
     }
 }

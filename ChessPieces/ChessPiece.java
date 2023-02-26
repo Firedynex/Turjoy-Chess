@@ -73,7 +73,7 @@ public abstract class ChessPiece {
      * Sets the name of the piece.
      * @param name
      */
-    public void setName(String name) {
+    public void setName(PieceType name) {
         this.name = name;
     }
 

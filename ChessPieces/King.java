@@ -16,4 +16,12 @@ public class King extends ChessPiece {
         super(PieceType.KING, color, false, xPosition, yPosition);
         this.firstMove = firstMove;
     }
+
+    public boolean validDirection(int xPosition, int yPosition) {
+        throw new RuntimeException();
+    }
+
+    public boolean validMove(int xPosition, int yPosition) {
+        throw new RuntimeException();
+    }
 }
