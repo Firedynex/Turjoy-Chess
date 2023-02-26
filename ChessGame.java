@@ -104,8 +104,8 @@ public class ChessGame {
       * Method that sets up all the kings for the game.
       */
       private void setKings() {
-        gameBoard[0][4] = new Queen(Color.BLACK, 0, 4);
-        gameBoard[7][4] = new Queen(Color.WHITE, 7, 4);
+        gameBoard[0][4] = new King(Color.BLACK, 0, 4, true);
+        gameBoard[7][4] = new King(Color.WHITE, 7, 4, true);
       }
 
 }
