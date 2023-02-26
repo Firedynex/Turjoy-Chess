@@ -10,7 +10,7 @@ public class Pawn extends ChessPiece{
 
     /**
      * Initializes all instance variables.
-     * @param color
+     * @param black
      * @param xPosition
      * @param yPosition
      * @param firstMove
