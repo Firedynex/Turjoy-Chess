@@ -106,6 +106,6 @@ public class ChessGame {
       private void setKings() {
         gameBoard[0][4] = new King(Color.BLACK, 0, 4, true);
         gameBoard[7][4] = new King(Color.WHITE, 7, 4, true);
-      }
+      } //setKings
 
 }
