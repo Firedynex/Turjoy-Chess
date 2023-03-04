@@ -1,6 +1,5 @@
 package ChessPieces;
 
-import javax.management.RuntimeErrorException;
 
 import PermanentCharacteristics.*;
 
@@ -25,7 +24,7 @@ public class Rook extends ChessPiece {
      * @return boolean
      */
     public boolean validMove(int xPosition, int yPosition) {
-        throw new RuntimeErrorException(null);
+        throw new UnsupportedOperationException("Yet to be implemented.");
     }
 
     /**
@@ -35,6 +34,6 @@ public class Rook extends ChessPiece {
      * @return boolean
      */
     protected boolean validDirection(int xPosition, int yPosition) {
-        throw new RuntimeErrorException(null);
+        throw new UnsupportedOperationException("Yet to be implemented.");
     }
 }

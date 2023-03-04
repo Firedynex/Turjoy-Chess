@@ -14,10 +14,10 @@ public class Knight extends ChessPiece {
     }
 
     public boolean validDirection(int xPosition, int yPosition) {
-        throw new RuntimeException();
+        throw new UnsupportedOperationException("Yet to be implemented.");
     }
 
     public boolean validMove(int xPosition, int yPosition) {
-        throw new RuntimeException();
+        throw new UnsupportedOperationException("Yet to be implemented.");
     }
 }

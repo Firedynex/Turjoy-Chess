@@ -1,7 +1,5 @@
 package ChessPieces;
 
-import javax.management.RuntimeErrorException;
-
 import PermanentCharacteristics.*;
 
 public class Pawn extends ChessPiece{
@@ -21,11 +19,11 @@ public class Pawn extends ChessPiece{
     }
 
     public boolean validDirection(int xPosition, int yPosition) {
-        throw new RuntimeException();
+        throw new UnsupportedOperationException("Yet to be implemented.");
     }
 
     public boolean validMove(int xPosition, int yPosition) {
-        throw new RuntimeErrorException(null);
+        throw new UnsupportedOperationException("Yet to be implemented.");
     }
 
 }
