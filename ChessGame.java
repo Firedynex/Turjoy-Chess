@@ -114,8 +114,8 @@ public class ChessGame {
        * @param yPosition
        * @return
        */
-      public ChessPiece getPieceAt(int xPosition, int yPosition) {
-        return ChessPiece[xPosition][yPosition].getName();
+      public PieceType getPieceAt(int xPosition, int yPosition) {
+        return gameBoard[xPosition][yPosition].getName();
       }
 
 }
