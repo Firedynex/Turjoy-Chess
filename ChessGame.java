@@ -108,4 +108,14 @@ public class ChessGame {
         gameBoard[7][4] = new King(Color.WHITE, 7, 4, true);
       } //setKings
 
+      /**
+       * Returns the chess piece located at position xPosition, yPosition.
+       * @param xPosition
+       * @param yPosition
+       * @return
+       */
+      public ChessPiece getPieceAt(int xPosition, int yPosition) {
+        return ChessPiece[xPosition][yPosition].getName();
+      }
+
 }
