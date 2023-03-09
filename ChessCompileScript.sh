@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/bash -ex
 javac -d bin src/PermanentCharacteristics/Color.java
 javac -d bin src/PermanentCharacteristics/PieceType.java
 javac -d bin -cp bin src/ChessPieces/ChessPiece.java

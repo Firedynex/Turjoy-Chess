@@ -27,7 +27,10 @@ public class Rook extends ChessPiece {
     public boolean validMove(int xPosition, int yPosition) {
         if (validDirection(xPosition, yPosition) == false) {
             return false;
-        } else if (validDirection(xPosition, yPosition) && )
+        } else if (validDirection(xPosition, yPosition) == true) {
+            return true;
+        }
+        return true;
     }
 
     /**
@@ -44,7 +47,4 @@ public class Rook extends ChessPiece {
         }
     }
 
-    public boolean blocked(ChessGame game) {
-        
-    }
 }
