@@ -33,7 +33,11 @@ public class Rook extends ChessPiece {
      * @param yPosition
      * @return boolean
      */
-    protected boolean validDirection(int xPosition, int yPosition) {
-        throw new UnsupportedOperationException("Yet to be implemented.");
+    protected boolean validDirection(int movedXPosition, int movedYPosition) {
+        if (this.getXPosition() != movedXPosition && this.getYPosition() != movedYPosition) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }
