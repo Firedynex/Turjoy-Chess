@@ -1,6 +1,5 @@
 package ChessPieces;
 
-
 import PermanentCharacteristics.*;
 
 public class Rook extends ChessPiece {
@@ -33,7 +32,15 @@ public class Rook extends ChessPiece {
      * @param yPosition
      * @return boolean
      */
-    protected boolean validDirection(int xPosition, int yPosition) {
-        throw new UnsupportedOperationException("Yet to be implemented.");
+    protected boolean validDirection(int moveXPosition, int moveYPosition) {
+        if (moveXPosition != this.getXPosition() && moveYPosition != this.getYPosition()) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    private boolean blocked(ChessGame game) {
+        
     }
 }
