@@ -6,6 +6,7 @@ import PermanentCharacteristics.*;
 public class Rook extends ChessPiece {
     
     private boolean firstMove;
+
     /**
      * Initializes all instance variables.
      * @param color
@@ -44,6 +45,6 @@ public class Rook extends ChessPiece {
     }
 
     public boolean blocked(ChessGame game) {
-
+        
     }
 }
