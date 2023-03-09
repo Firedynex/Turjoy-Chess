@@ -24,7 +24,9 @@ public class Rook extends ChessPiece {
      * @return boolean
      */
     public boolean validMove(int xPosition, int yPosition) {
-        throw new UnsupportedOperationException("Yet to be implemented.");
+        if (validDirection(xPosition, yPosition) == false) {
+            return false;
+        } else if (validDirection(xPosition, yPosition) && )
     }
 
     /**
@@ -39,5 +41,9 @@ public class Rook extends ChessPiece {
         } else {
             return true;
         }
+    }
+
+    public boolean blocked(ChessGame game) {
+
     }
 }
