@@ -1,6 +1,5 @@
 package ChessPieces;
 
-
 import PermanentCharacteristics.*;
 
 public class Rook extends ChessPiece {
@@ -47,4 +46,15 @@ public class Rook extends ChessPiece {
         }
     }
 
+    public boolean blocked(ChessGame game, int movedXPosition, int movedYPosition) {
+        if (movedXPosition != this.getXPosition() && movedXPosition > this.getXPosition()) {
+            for (int row = this.getXPosition(); row < movedXPosition; row++) {
+                try (!(game.getPieceAt(movedXPosition, movedYPosition) == null)) {
+                    return false;
+                } catch (IllegalArgumentException iae) {
+                    System.out.print();
+                }
+            }
+        }
+    }
 }

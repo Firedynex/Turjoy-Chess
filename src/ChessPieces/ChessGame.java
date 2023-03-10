@@ -1,5 +1,6 @@
+package ChessPieces;
+
 import PermanentCharacteristics.*;
-import ChessPieces.*;
 
 public class ChessGame {
     private ChessPiece[][] gameBoard;
@@ -116,6 +117,9 @@ public class ChessGame {
        * @return
        */
       public PieceType getPieceAt(int xPosition, int yPosition) {
+        if (gameBoard[xPosition][yPosition] == null) {
+            throw new IllegalArgumentException("There isn't a piece at the given coordinates.");
+        }
         return gameBoard[xPosition][yPosition].getName();
       }
 
